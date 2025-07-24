@@ -5,6 +5,12 @@ terraform {
       version = "4.32.0"
     }
   }
+backend "azurerm" {
+    resource_group_name  = "satrg"  
+    storage_account_name = "storage552"
+    container_name       = "container"
+    key                  = "resource.tfstate"
+  }
 }
 
 provider "azurerm" {
