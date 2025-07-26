@@ -21,7 +21,7 @@ stages:
         backendAzureRmOverrideSubscriptionID: 'e8ad8a11-5e89-4545-9309-27ed1a0cd62f'
         backendAzureRmResourceGroupName: 'satrg'
         backendAzureRmStorageAccountName: 'storage552'
-        backendAzureRmContainerName: 'container'
+        backendAzureRmContainerName: 'cont1'
         backendAzureRmKey: 're.tfstate'
 
 # Stage 2 - Terraform Plan
