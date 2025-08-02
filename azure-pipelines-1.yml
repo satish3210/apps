@@ -23,6 +23,7 @@ stages:
         backendAzureRmStorageAccountName: 'storage552'
         backendAzureRmContainerName: 'cont1'
         backendAzureRmKey: 're.tfstate'
+        workingDirectory: '$(System.DefaultWorkingDirectory)'
 
 # Stage 2 - Terraform Plan
 - stage: terraformplan
@@ -37,6 +38,7 @@ stages:
       inputs:
         provider: 'azurerm'
         command: 'plan'
+        workingDirectory: '$(System.DefaultWorkingDirectory)'
         environmentServiceNameAzureRM: 'azure connection'
         environmentAzureRmOverrideSubscriptionID: 'e8ad8a11-5e89-4545-9309-27ed1a0cd62f'
 
